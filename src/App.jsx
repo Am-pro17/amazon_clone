@@ -1,13 +1,15 @@
-import { useState } from 'react'
 
 import './App.css'
+import Header from './components/Header/Header'
+import Carousel_com from './components/Carousel/Carousel_com'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-     <h1>hi</h1>
+     <Header/>
+     <Carousel_com/>
     </>
   )
 }
