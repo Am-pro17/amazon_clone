@@ -1,0 +1,24 @@
+.product__detail{
+    width: 900px;
+    margin: 0 auto;
+    justify-items: center;
+    margin-top: 50px;
+    /* background-color: #cec0c0; */
+    display: flex;
+    gap: 20px;
+}
+.product__detail_des{
+    position: relative;
+    width: 450px;
+    /* padding: 20px; */
+    padding-top: 50px;
+    /* margin-left: 10px; */
+    font-size: 14px;
+}
+.product__detail_price{
+    margin-top: 50px;
+  text-align: center;
+  font-size: smaller;
+  margin-bottom: 20px;
+    /* position: absolute; */
+}

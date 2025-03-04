@@ -1,19 +1,25 @@
 let cata_items = [
     {
         title:"Electronics",
-        image:"/public/img/101.jpg"
+        image:"/img/101.jpg",
+        name:"electronics"
     },
     {
         title:"Discover fashion trends",
-        image:"./public/img/103.jpg"
+        image:"/img/103.jpg",
+        name:"women's clothing"
+
+
     },
     {
         title:"Men's Clothing",
-        image:"./public/img/104.jpg"
+        image:"/img/104.jpg",
+        name:"men's clothing"
     },
     {
         title:"Jewelery",
-        image:"./public/img/102.jpg"
+        image:"/img/102.jpg",
+        name:"jewelery"
     }
 ]
 

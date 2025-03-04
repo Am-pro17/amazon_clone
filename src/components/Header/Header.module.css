@@ -11,6 +11,9 @@
     padding: 5px;
     min-width: 1000px;
     overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 .first_section{
     display: flex;

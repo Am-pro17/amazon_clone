@@ -5,6 +5,8 @@ import amazon_logo from "../../assets/amazon_logo.png"
 import us_flag from "../../assets/us_flag.png"
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import classes from "./Header.module.css"
+import {Link} from 'react-router-dom'
+
 
 function Header() {
   return (
@@ -13,7 +15,7 @@ function Header() {
 
         <section className={classes.first_section}>
 
-            <a href=""><img className={classes.logo}src={amazon_logo} alt="" /></a>
+            <Link to="/"><img className={classes.logo}src={amazon_logo} alt="" /></Link>
 
             <div className={classes.delivery}>
 
@@ -56,26 +58,26 @@ function Header() {
                 </select>
         </div>
 
-        <a href="#sign in">
+        <Link to="/auth">
             <div>
                 <p>Hello, sign in</p>
                 <div>Account & Lists</div>
             </div>
-        </a>
+        </Link>
 
-        <a href="">
+        <Link to="/orders">
             <div>
                 <p>Returns</p>
                 <div>& Orders</div>
             </div>
-        </a>
+        </Link>
 
-        <a href="" className={classes.cart}>
+        <Link to="/cart" className={classes.cart}>
             <div>
                 <p>0</p>
                 <div><ShoppingCartOutlinedIcon/></div>
             </div>
-        </a>
+        </Link>
         
         </section>
 
