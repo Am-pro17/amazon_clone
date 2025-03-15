@@ -1,4 +1,4 @@
-import React from 'react'
+import {useContext} from 'react'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import amazon_logo from "../../assets/amazon_logo.png"
@@ -6,9 +6,15 @@ import us_flag from "../../assets/us_flag.png"
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import classes from "./Header.module.css"
 import {Link} from 'react-router-dom'
+import { DataContext } from './../DataProvider/DataProvider';
 
 
 function Header() {
+    const {state} = useContext(DataContext)
+    let cartcounter = state.basket.length
+console.log(cartcounter)
+
+
   return (
     <section className={classes.header__container}>
 
@@ -74,7 +80,7 @@ function Header() {
 
         <Link to="/cart" className={classes.cart}>
             <div>
-                <p>0</p>
+                <p>{cartcounter}</p>
                 <div><ShoppingCartOutlinedIcon/></div>
             </div>
         </Link>

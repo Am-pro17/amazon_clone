@@ -1,13 +1,11 @@
-import {useState,useEffect} from 'react'
+import {useState,useEffect,useReducer} from 'react'
 import axios from 'axios'
 import Single_product from './Single_product'
 import classes from './Product.module.css'
 
+
 function Product() {
- 
-// fetch('https://fakestoreapi.com/products')
-//   .then(response => response.json())
-//   .then(data => console.log(data));
+
 const [products, setProducts] = useState([])
 
 useEffect(() => {
