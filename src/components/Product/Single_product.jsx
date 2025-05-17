@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 import { Type } from './../../utility/actionType';
 import { DataContext } from './../DataProvider/DataProvider';
 
-function Single_product({product}) {
+function Single_product({product, show, flex, desc}) {
     let {title,image,description,category,rating,price,id} = product;
     
     const { state, dispatch } = useContext(DataContext); // Use Context
@@ -15,7 +15,6 @@ function Single_product({product}) {
     let location = useLocation()
     // console.log(location.pathname)
     
-let show = true;
       let addtocart= ()=>{
         dispatch({
             type:Type.ADD_TO_BASKET,
@@ -26,7 +25,10 @@ let show = true;
       }
 
   return (
-    <div className={classes.product__container}>
+    <div style={flex ? { 
+        display: "flex",
+        gap:"30px",
+     } : {}} className={classes.product__container}>
     <Link to={`/products/${id}`}>
         <img src={image} alt="" />
     </Link>
@@ -47,10 +49,18 @@ let show = true;
         <br />
         <br />
          {   
-       ( location.pathname!="/cart")?(<button  className={`${classes.button} ${show==true}?${classes.show}:${classes.hide}`} onClick={addtocart}>
+       (show) && (<><button  className={classes.button} onClick={addtocart}>
             add to cart
-        </button>):(<br/>)
+        </button>
+    </>)
+    
 }
+
+{
+    ( desc && <div className={classes.cart__desc}>{description}</div>)
+
+}
+
     </div>
 
 </div>

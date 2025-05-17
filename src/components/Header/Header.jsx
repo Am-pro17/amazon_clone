@@ -7,12 +7,18 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import classes from "./Header.module.css"
 import {Link} from 'react-router-dom'
 import { DataContext } from './../DataProvider/DataProvider';
+import { auth } from './../../utility/firebase';
 
 
 function Header() {
     const {state} = useContext(DataContext)
     let cartcounter = state.basket.length
-console.log(cartcounter)
+    let user = state?.user?.email
+    let name = user?.split("@")[0]
+
+    // console.log(state)
+    
+// console.log(cartcounter)
 
 
   return (
@@ -64,10 +70,21 @@ console.log(cartcounter)
                 </select>
         </div>
 
-        <Link to="/auth">
+        <Link to={!user && "/auth"}>
             <div>
-                <p>Hello, sign in</p>
-                <div>Account & Lists</div>
+                {
+                    user?(
+                    <>
+                    <p>Hello, {name}</p>
+                <small onClick={()=>auth.signOut()}>Signout</small>
+                    </>
+                ):(<>
+                <p>Hello ,sign in</p>
+                <small>Account & Lists</small>
+                </>)
+                }
+                
+
             </div>
         </Link>
 

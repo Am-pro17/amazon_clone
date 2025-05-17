@@ -23,7 +23,7 @@ useEffect(() => {
    <div className={classes.products__container}>
     {
         products.map((single,i)=>{
-            return <Single_product key={i} product={single}/>
+            return <Single_product key={i} product={single} show={true}/>
         })
     }
    </div>

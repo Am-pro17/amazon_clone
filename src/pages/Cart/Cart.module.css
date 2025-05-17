@@ -56,10 +56,12 @@
 .cart_product >div> div {
     text-align: center;
 }
+
 @media screen and (min-width: 968px) {
     .container{
-        flex-direction: column;
-        order: 1;
-        justify-items: center;
+       margin-left: 20%;
+    }
+    .subtotal{
+        margin-left: 40%;
     }
 }

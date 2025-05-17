@@ -80,7 +80,6 @@
 }
 .button:hover{
     background-color:#d49644;
-
 }
 .rating{
     display: flex;
@@ -104,4 +103,13 @@
 }
 .hide{
   display: none !important;
+}
+.product__container img{
+  height: 100px;
+}
+.cart__desc{
+  display: block;
+  width: 700px;
+  position: absolute;
+  margin:-220px 287px;
 }

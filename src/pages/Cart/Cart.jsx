@@ -45,9 +45,7 @@ function Cart() {
 
                         <Single_product key={i}
                         product={item}
-                         renderDesc={true}
-                         flex={true}
-                         renderAdd={true}
+                         desc={true}
                         />
                         <div>
                           <button onClick={()=>increment(item)}><SlArrowUp /></button>
@@ -73,7 +71,7 @@ function Cart() {
                             <input type="checkbox"/>
                             <small>This order contains a gift </small>
                         </span>
-                        <Link to="/payment">Continue to Checkout</Link>
+                        <Link to="/payments">Continue to Checkout</Link>
                     </div>
                   )
                 }
