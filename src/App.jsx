@@ -4,8 +4,7 @@ import { useContext, useEffect } from 'react';
 import { auth } from './utility/firebase.js';
 import { DataContext } from './components/DataProvider/DataProvider';
 import { Type } from './utility/actionType';
-
-
+import {} from "./"
 function App() {
   const { dispatch } = useContext(DataContext)
 
