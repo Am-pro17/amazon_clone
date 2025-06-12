@@ -1,0 +1,9 @@
+.category_wrapper{
+    z-index: 4;
+ width: 650px;
+ display: flex;
+ gap: 10px;
+ justify-items: center;
+ text-align: center;
+ margin-left: 7vw;
+}

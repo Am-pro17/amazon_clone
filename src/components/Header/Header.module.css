@@ -1,0 +1,134 @@
+.logo{
+    width: 97px;
+    
+}
+.header__container{
+    display: flex;
+    background-color: #131921;
+    align-items: center;
+    height: 50px;
+    color: white;
+    padding: 5px;
+    min-width: 1000px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.first_section{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    gap: 18px;
+}
+.delivery{
+   display: flex;
+}
+.location >p{
+font-size: 10px;
+/* margin-left: 19px; */
+}
+.location >div{
+font-weight: 800;
+font-size: 15px;
+}
+.search{
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid rgb(236, 220, 220); */
+}
+.search input{
+    width: 100%;
+}
+.search select, .search input{
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.search div{
+    background-color: #FEBD69;
+    width: 40px;
+    text-align: center;
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+    border-color: aliceblue;
+}
+
+.search select{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #E6E6E6;
+}
+.third_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+   
+}
+.third_section >div{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #131921;
+    padding: 5px;
+}
+
+.third_section >div >img{
+    width: 23px;
+}
+
+.third_section select{
+    background-color:#131921;
+    color: white;
+    border-color: #131921;
+}
+.header__container a{
+ padding: 5px;
+ border: 1px solid #131921;
+}
+.header__container a p{
+    font-size: 10px;
+}
+.header__container a >div >div{
+    font-size: 16px;
+}
+
+.third_section a{
+    color: #E6E6E6;
+    text-decoration: none;
+}
+.header__container a:hover{
+ border: 1px solid #fff;
+
+}
+.delivery,.flag{
+    border: 1px solid #131921;
+    align-items: center;
+}
+.delivery:hover ,.flag:hover{
+    border: 1px solid #fff;
+
+}
+.cart{
+    text-align: center;
+
+}
+.cart p{
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    margin-top: -5px;
+    margin-left: 9px;
+    background-color: #131921;
+    color: #FEBD69;
+}

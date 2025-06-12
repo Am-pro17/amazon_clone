@@ -1,0 +1,6 @@
+export const Type = {
+    ADD_TO_BASKET:"ADD_TO_BASKET",
+    REMOVE:"REMOVE",
+    SET_USER:"SET_USER",
+    EMPTY_BASKET:"EMPTY_BASKET"
+} 
