@@ -2,7 +2,7 @@ import { useEffect, useContext} from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { DataContext } from './../../components/DataProvider/DataProvider';
 import { Type } from './../../utility/actionType';
-import { auth } from './../../utility/fireBase';
+import { auth } from './../../utility/firebase';
 import Landing from './../Landing/Landing';
 
 function Signout() {

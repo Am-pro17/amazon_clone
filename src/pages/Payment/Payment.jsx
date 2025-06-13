@@ -7,7 +7,7 @@ import {useStripe, useElements, CardElement} from '@stripe/react-stripe-js';
 import CurrencyFormat from './../../components/CurrencyFormat/CurrencyFormat';
 import {axiosInstance} from "../../Api/axios"
 import { ClipLoader } from 'react-spinners';
-import { db } from "../../utility/fireBase"
+import { db } from "../../utility/firebase"
 import { collection, doc, setDoc } from "firebase/firestore";
 import { useNavigate } from 'react-router-dom';
 import { Type } from './../../utility/actionType';
