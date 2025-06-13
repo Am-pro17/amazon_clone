@@ -1,6 +1,6 @@
 import React, {useEffect,useContext, useState} from 'react'
 import LayOut from '../../components/LayOut/LayOut'
-import { db } from "../../utility/fireBase"
+import { db } from "../../utility/firebase"
 import { getFirestore, collection, doc, query, orderBy, onSnapshot } from "firebase/firestore";
 import { DataContext } from './../../components/DataProvider/DataProvider';
 import classes from "./Order.module.css"
